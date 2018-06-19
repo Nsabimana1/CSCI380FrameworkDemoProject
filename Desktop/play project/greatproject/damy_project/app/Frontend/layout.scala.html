@@ -1,0 +1,62 @@
+
+@(title: String)(body: Html)
+<html>
+    <head>
+        <title>@title</title>
+
+        <link href="@routes.Assets.at("assets/images/favicon.ico")" rel="apple-touch-icon" type="image/png" sizes="144x144"><link href="assets/images/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+        <link href="@routes.Assets.at("assets/images/favicon.ico")" rel="apple-touch-icon" type="image/png" sizes="72x72">
+        <link href="@routes.Assets.at("assets/images/favicon.ico")" rel="apple-touch-icon" type="image/png">
+        <link href="@routes.Assets.at("assets/images/favicon.ico")" rel="icon" type="image/png">
+        <link href="@routes.Assets.at("assets/images/favicon.ico")" rel="shortcut icon">
+
+            <!-- Global stylesheets -->
+        <link href="@routes.Assets.at("fonts/fonts.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("assets/font-awesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/animate.min.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/bootstrap.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/main.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/bootstrap-extended.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/plugins.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/color-system.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("css/media.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("assets/weather/weather-icons.min.css")" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.at("assets/weather/weather-icons-wind.min.css")" rel="stylesheet" type="text/css">
+            <!-- /global stylesheets -->
+    </head>
+    <body>
+        @Navigation_bar();
+        <!-- Page container -->
+        <div class="page-container" style="min-height: 700px">
+            <!-- page content -->
+            <div class="page-content">
+                @Side_bar();
+
+                <!-- Main content -->
+                <div class="content-wrapper">
+                    @body
+                </div>
+                <!--/ Main content -->
+
+
+            </div>
+            <!-- /page content -->
+
+        </div>
+            <!-- / Page container -->
+
+
+
+            <!-- Core JS files -->
+        <script src="@routes.Assets.at("js/jquery.min.js")"></script>
+        <script src="@routes.Assets.at("js/bootstrap.min.js")"></script>
+        <script src="@routes.Assets.at("js/fancybox.min.js")"></script>
+        <script src="@routes.Assets.at("js/app.js")"></script>
+        <script src="@routes.Assets.at("https://maps.googleapis.com/maps/api/js?v=3.exp")"></script>
+        <script src="@routes.Assets.at("https://www.google.com/jsapi")"></script>
+        <script src="@routes.Assets.at("js/maps/jvectormap/jvectormap.min.js")"></script>
+        <script src="@routes.Assets.at("js/maps/jvectormap/map_files/world.js")"></script>
+        <script src="@routes.Assets.at("js/dashboard.js")"></script>
+        <script src="@routes.Assets.at("js/maps/google/markers/symbols_custom.js")"></script>
+    </body>
+</html>
