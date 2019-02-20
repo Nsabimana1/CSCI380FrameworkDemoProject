@@ -1,0 +1,69 @@
+
+@import models.db.Question
+@import models.db.Response
+@(questions: List[Question])
+   @for(question <- questions) {
+    <div class="panel panel-flat no-border p-20">
+        <div class="panel-heading">
+            <a href="@routes.QuestionController.findResponse(question.questionTitle)"><h4 class="panel-title text-bold text-slate-300">@question.questionTitle</h4></a>
+        </div>
+
+        <div class="panel-body">
+            <div class="editable">
+                <p> @question.questionContent </p>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="icons-list icons-list-extended mt-10" style="float: right">
+                        <li><div class="timestamp">@question.questionDate</div></li>
+                        <li><div class="timestamp">2:30 pm</div></li>
+                        <li><div class="timestamp"> <a href="@routes.Application.openProfilePage(question.requester.email)"> Asked by @question.requester.userName</a></div></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 text-right">
+                    <h4 class="no-margin text-semibold text-slate-300"> @Response.getAllResponsesPerQuestion(question).size()
+                        Solutions</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@*//@for(question <- Questions) {*@
+    @*<div class="panel panel-flat no-border p-20">*@
+        @*<div class="panel-heading">*@
+            @*<a href=""><h4 class="panel-title text-bold text-slate-300" id="questionTitle"></h4>@question.questionTitle</a>*@
+        @*</div>*@
+
+        @*<div class="panel-body">*@
+            @*<div class="editable">*@
+                @*<p id="questionContent">*@
+                                @*</p>*@
+            @*</div>*@
+        @*</div>*@
+
+        @*<div class="panel-footer">*@
+            @*<div class="row">*@
+                @*<div class="col-sm-6">*@
+                    @*<ul class="icons-list icons-list-extended mt-10" style="float: right">*@
+                        @*<li><div class="timestamp" id="questionDate"></div></li>*@
+                        @*<li><div class="timestamp">2:30 pm</div></li>*@
+                        @*<li><div class="timestamp"><span> Asked by </span>*@
+                            @*<a href="" id="requesterName"> RequesterName</a></div>*@
+                        @*</li>*@
+                    @*</ul>*@
+                @*</div>*@
+
+                @*<div class="col-sm-6 text-right">*@
+                    @*<h4 class="no-margin text-semibold text-slate-300" id="responsesPerquestionNumber"> Solutions</h4>*@
+                @*</div>*@
+            @*</div>*@
+        @*</div>*@
+    @*</div>*@
+@*}*@

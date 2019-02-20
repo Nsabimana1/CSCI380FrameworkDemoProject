@@ -1,0 +1,227 @@
+
+@import java.util
+@(Toics: ArrayList)
+@import Frontend.html.layout;
+@layout("Dashboard"){
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title">
+                <h4><i class="fa fa-home position-left"></i> <span>Home</span></h4>
+            </div>
+            <ul class="breadcrumb">
+                <li><a href="index.htm"><i class="fa fa-home"></i>Home</a></li>
+                <li class="active">Questions</li>
+            </ul>
+        </div>
+    </div>
+        <!-- /page header -->
+
+        <!-- Content area -->
+    <div class="content">
+
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h4 class="panel-title">Search Questions</h4>
+            </div>
+
+            <div class="panel-body">
+                <form action="http://followtechnique.com/themes/bird_v1/theme/search.htm#" class="main-search">
+                    <div class="input-group ">
+                        <div class="has-feedback has-feedback-left">
+                            <input type="text" class="form-control input-xlg" value="Put any keyword here to search...">
+                            <div class="form-control-feedback">
+                                <i class="fa fa-search text-muted text-size-base"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-xlg">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="row search-option-buttons">
+                        <div class="col-sm-12 text-right">
+                            <ul class="list-inline no-margin-bottom mt-10">
+                                <li><a href="search.htm#" class="btn btn-link btn-sm"><i class="fa fa-search-plus position-left"></i> Browse website</a></li>
+                                <li><a href="search.htm#" class="btn btn-link btn-sm"><i class="fa fa-reorder position-left"></i> Advanced search</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal_iconified">Ask a Question</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div class="panel panel-flat no-border p-20">
+                    <div class="panel-heading">
+                        <a href="#"><h4 class="panel-title text-semibold">What is the splest way of adding an icon on a web page</h4></a>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="editable">
+                            <p>
+                                This is an editable div element.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt est ac dolor condimentum vitae laoreet ante accumsan. Nullam tincidunt tincidunt ante tempus commodo. Duis rutrum, magna non lacinia tincidunt, risus lacus tempus ipsum, sit amet euismod justo metus ut metus. Donec feugiat urna non leo laoreet in tincidunt lectus gravida. Sed semper ante sed dui consectetur eget commodo eros imperdiet. Mauris magna diam, scelerisque at ornare vel, dignissim ac sem. Fusce id congue lacus. Duis sit amet tellus erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mattis facilisis pretium. In in nibh eu urna ornare semper. Sed imperdiet felis vitae nibh sagittis eu pulvinar metus facilisis. Sed dolor orci, aliquet sagittis auctor id, faucibus at justo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="icons-list icons-list-extended mt-10" style="float: right">
+                                    <li><div class="timestamp">Asked June 27</div></li>
+                                    <li><div class="timestamp">2:30 pm</div></li>
+                                    <li><div class="timestamp">Asked by Erick Backman</div></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 text-right">
+                                <h4 class="no-margin text-semibold text-lime-300">60 Solutions</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-flat no-border  p-20">
+                    <div class="panel-heading">
+                        <a href="#"><h4 class="panel-title text-semibold">What is the splest way of adding an icon on a web page</h4></a>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="editable">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt est ac dolor condimentum vitae laoreet ante accumsan. Nullam tincidunt tincidunt ante tempus commodo. Duis rutrum, magna non lacinia tincidunt, risus lacus tempus ipsum, sit amet euismod justo metus ut metus. Donec feugiat urna non leo laoreet in tincidunt lectus gravida. Sed semper ante sed dui consectetur eget commodo eros imperdiet. Mauris magna diam, scelerisque at ornare vel, dignissim ac sem. Fusce id congue lacus. Duis sit amet tellus erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus mattis facilisis pretium. In in nibh eu urna ornare semper. Sed imperdiet felis vitae nibh sagittis eu pulvinar metus facilisis. Sed dolor orci, aliquet sagittis auctor id, faucibus at justo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="icons-list icons-list-extended mt-10" style="float: right">
+                                    <li><div class="timestamp">Asked June 27</div></li>
+                                    <li><div class="timestamp">2:30 pm</div></li>
+                                    <li><div class="timestamp">Asked by Erick Backman</div></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 text-right">
+                                <h4 class="no-margin text-semibold text-lime-300">60 Solutions</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="panel panel-flat bg-lime-800 no-margin">
+                    <div class="panel-heading heading-condensed">
+                        <h4 class="panel-title pl-20">April 2016</h4>
+                    </div>
+                    <div class="chart" id="google-line"></div>
+                </div>
+
+                <div class="panel panel-flat no-border no-margin p-20">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-right pt-10">
+                            <h4 class="no-margin text-semibold text-lime-300">60%</h4>
+                            <p class="text-muted text-uppercase">Direct Sell</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <div class="chart" id="google-donut-rotate"></div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-left pt-10">
+                            <h4 class="no-margin text-semibold text-lime-300">40%</h4>
+                            <p class="text-muted text-uppercase small">Channel Sell</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-flat mt-20">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6 text-right pt-20">
+                            <h2 class="no-margin text-semibold text-purple-600 pt-5"><i class="fa fa-dollar"></i> 34,356</h2>
+                            <p class="text-muted text-uppercase">Expected Sales</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 text-left p-10 pr-20">
+                            <div class="chart" id="google-column-sales"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-flat mt-20">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4 text-right pt-5">
+                            <div class="wi wi-day-snow wi-40 ml-10 text-amber-700 pt-20"></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8 text-left">
+                            <p class="text-muted text-uppercase no-margin no-padding pt-10"><i class="fa fa-map-marker"></i> New York (Rainy)</p>
+                            <div class="weather-cent text-amber-700 no-margin no-padding"><span>18</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- Model with icons -->
+            <div id="modal_iconified" class="modal fade">
+                <div class="modal-dialog">
+
+                    <form action="http://localhost/templates/bird/theme/page_ready_tickets.php#tickets-single" method="post">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Creating New Question</h4>
+                                <textarea id="tickets-reply" name="tickets-reply" class="form-control" rows="1" placeholder="Type your question title here"></textarea>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <div class="form-group">
+                                    <select class="select-fixed-single form-control">
+                                            <option value="AZ">Select Question Category</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+
+                                <textarea id="tickets-reply" name="tickets-reply" class="form-control" rows="3" placeholder="Type your question details here"></textarea>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal"><i class="fa fa-close position-left"></i> Close</button>
+                                <button type="submit" class="btn btn-success"><i class="fa fa-send position-left"></i> Submit</button>
+                                @*<button type="submit" class="btn btn-success btn-labeled btn-labeled-right mt-20 pull-right">Send Question <b><i class="fa fa-reply"></i></b></button>*@
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <!-- /Model with icons -->
+
+
+            <!-- Footer -->
+        <div class="footer pt-20">
+                    &copy; 2016 Bird - Admin theme by <a href="http://followtechnique.com/" target="_blank">FollowTechnique</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Version - 1.0.0
+        </div>
+            <!-- /footer -->
+    </div>
+        <!-- /content area -->
+}

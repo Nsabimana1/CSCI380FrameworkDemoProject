@@ -4,7 +4,9 @@ import io.ebean.*;
 import play.data.validation.Constraints;
 import javax.persistence.*;
 
+@Entity
 public class Question_table extends Model {
+    @Id
     public Integer Question_id;
     public String Question_content;
     public int Requester_id;
